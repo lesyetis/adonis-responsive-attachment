@@ -461,7 +461,7 @@ export class ResponsiveAttachment implements ResponsiveAttachmentContract {
      */
     if (this.buffer) {
       this.buffer = null
-    } else await this.getDisk().delete(this.path!)
+    } else await this.getDisk().delete(this.relativePath!)
 
     /**
      * Compute the URL
